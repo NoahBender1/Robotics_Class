@@ -23,6 +23,7 @@ public class TestOp extends OpMode {
     FtcDashboard dashboard = FtcDashboard.getInstance();
     Telemetry dashboardTelemetry = dashboard.getTelemetry();
     DcMotor myMotor;
+    public static double
 
     /*
      * Code to run ONCE when the driver hits INIT
@@ -54,8 +55,6 @@ public class TestOp extends OpMode {
     @Override
     public void start() {
         runtime.reset();
-        myMotor.setPower(.5);
-
     }
 
     /*
@@ -73,6 +72,5 @@ public class TestOp extends OpMode {
      */
     @Override
     public void stop() {
-        myMotor.setPower(0);
     }
 }
